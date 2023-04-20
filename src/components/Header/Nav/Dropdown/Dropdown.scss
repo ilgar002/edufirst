@@ -1,0 +1,39 @@
+@import "../../../../scss/variables.scss";
+ul.nav-dropdown {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform: translate(0%, 100%);
+  padding: 8px 0;
+  box-shadow: 0 4px 8px #00000080;
+  display: none;
+  .child-link {
+    padding: 9px 16px;
+    white-space: nowrap;
+    font-size: 14px;
+    position: relative;
+    transition: none;
+    a {
+      color: $clr-primary-text;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 3px;
+      height: 100%;
+      background-color: $clr-primary;
+      border-radius: 0 20% 20% 0;
+      opacity: 0;
+    }
+    &:hover {
+      background-color: #f5f0f0;
+      color: $clr-primary;
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}

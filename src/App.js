@@ -1,7 +1,14 @@
 import React from "react";
-
+import Header from "./components/Header/Header";
+import { BrowserRouter } from "react-router-dom";
 const App = () => {
-  return <h1>EduFirst</h1>;
+  return (
+    <>
+      <BrowserRouter basename="/">
+        <Header />
+      </BrowserRouter>
+    </>
+  );
 };
 
 export default App;

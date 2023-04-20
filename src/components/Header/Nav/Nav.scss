@@ -1,0 +1,42 @@
+@import "../../../scss/variables.scss";
+nav {
+  background-color: $clr-primary;
+  * {
+    transition: 0.3s all ease;
+  }
+  ul.links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: 0 auto;
+    > .head-link {
+      color: #fff;
+      padding: 15px;
+      font-weight: 700;
+      font-size: 1rem;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      cursor: pointer;
+      position: relative;
+      > a {
+        color: #fff;
+      }
+      .arrowIcon {
+        height: 12px;
+        width: 12px;
+      }
+      &:hover {
+        background-color: $clr-primary-dark;
+        .arrowIcon {
+          transform: rotate(180deg);
+        }
+        ul.nav-dropdown {
+          display: block;
+        }
+      }
+    }
+  }
+}
