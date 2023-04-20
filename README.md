@@ -1,3 +1,3 @@
 # EduFirst
 
-[Live link]()
+[Live link](https://edufirstaz.netlify.app/)
