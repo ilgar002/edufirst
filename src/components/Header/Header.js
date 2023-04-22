@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Nav from "./Nav/Nav";
 import "./Header.scss";
 import Hamburger from "./Hamburger/Hamburger";
-import Logo from "./Logo/Logo";
+import Logo from "../Logo/Logo";
 
 const Header = () => {
   //mobile navbar

@@ -7,6 +7,8 @@ nav {
   ul.links {
     display: flex;
     justify-content: space-between;
+    max-width: 1150px;
+    margin: 0 auto;
     .head-link {
       color: #fff;
       padding: 15px;

@@ -2,6 +2,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
 .lessons {
   font-size: 1rem;
+  margin-bottom: 40px;
   .title {
     margin: 40px 0;
     text-align: center;
@@ -93,6 +94,7 @@
 @media (max-width: 992px) {
   .lessons {
     font-size: 0.8rem;
+    margin-bottom: 25px;
     .title {
       margin: 25px 0;
     }

@@ -1,0 +1,21 @@
+@import "../../scss/variables.scss";
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  a {
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.1s ease;
+    svg {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  a {
+    &:hover {
+      color: $clr-primary;
+      transform: scale(1.2);
+    }
+  }
+}
