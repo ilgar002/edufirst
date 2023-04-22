@@ -9,9 +9,9 @@ const Header = () => {
   const [isOpened, setIsOpened] = useState(false);
   return (
     <header>
-      <div className="caption">
+      <div className="caption container">
         <Logo />
-        <span className="slogan">Təhsil hər zaman öndədir!</span>
+        <span className="slogan shine">Təhsil hər zaman öndədir!</span>
       </div>
       <Hamburger isOpened={isOpened} setIsOpened={setIsOpened} />
       <Nav isOpened={isOpened} />

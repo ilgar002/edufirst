@@ -1,18 +1,16 @@
 @import "../../scss/variables.scss";
-@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
 header {
   .caption {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1150px;
-    margin: 0 auto;
     .slogan {
       font-size: 2rem;
       color: $clr-primary;
-      font-family: "Great Vibes", cursive;
+      font-family: "Alex Brush", cursive;
+      font-weight: 600;
       letter-spacing: 3px;
-      padding-right: 16px;
     }
   }
 }

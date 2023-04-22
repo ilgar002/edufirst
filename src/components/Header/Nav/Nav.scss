@@ -7,8 +7,6 @@ nav {
   ul.links {
     display: flex;
     justify-content: space-between;
-    max-width: 1150px;
-    margin: 0 auto;
     .head-link {
       color: #fff;
       padding: 15px;
@@ -48,6 +46,7 @@ nav {
     top: 48px;
     left: 0;
     width: 100%;
+    z-index: 100;
     &.mobile-clicked {
       display: block;
     }

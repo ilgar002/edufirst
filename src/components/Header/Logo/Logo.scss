@@ -1,12 +1,12 @@
 .logo {
-  width: 95px;
+  width: 100px;
   height: 60px;
-  padding-left: 16px;
+  object-fit: cover;
 }
 @media (max-width: 768px) {
   .logo {
     height: 44px;
-    width: 70px;
+    width: 80px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);

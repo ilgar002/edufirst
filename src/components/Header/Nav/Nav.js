@@ -14,7 +14,7 @@ const Nav = ({ isOpened }) => {
   };
   return (
     <nav className={isOpened ? "mobile-clicked" : ""}>
-      <ul className="links">
+      <ul className="links container">
         {navigations.map((el, index) => {
           return (
             <div key={el.id}>
