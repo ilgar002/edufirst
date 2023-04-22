@@ -4,11 +4,13 @@
   object-fit: cover;
 }
 @media (max-width: 768px) {
-  .logo {
-    height: 44px;
-    width: 80px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+  header {
+    .logo {
+      height: 44px;
+      width: 80px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
