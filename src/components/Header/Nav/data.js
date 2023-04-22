@@ -4,7 +4,7 @@ export const navigations = [
     id: uuidv4(),
     head: {
       text: "about",
-      slug: "about",
+      slug: "",
     },
     child: [
       {
@@ -28,7 +28,7 @@ export const navigations = [
     id: uuidv4(),
     head: {
       text: "teachers",
-      slug: "about",
+      slug: "",
     },
     child: [
       {
@@ -50,7 +50,7 @@ export const navigations = [
 
     head: {
       text: "Homeschoolers",
-      slug: "about",
+      slug: "",
     },
     child: [
       {
@@ -72,7 +72,7 @@ export const navigations = [
 
     head: {
       text: "program",
-      slug: "about",
+      slug: "",
     },
     child: [
       {

@@ -1,1 +1,34 @@
 @import "../../scss/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+header {
+  .caption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1150px;
+    margin: 0 auto;
+    .slogan {
+      font-size: 2rem;
+      color: $clr-primary;
+      font-family: "Great Vibes", cursive;
+      letter-spacing: 3px;
+      padding-right: 16px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  header {
+    border-bottom: 1px solid $clr-primary;
+    padding: 0 16px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    .caption {
+      order: 1;
+      position: static;
+      .slogan {
+        display: none;
+      }
+    }
+  }
+}

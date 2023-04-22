@@ -37,3 +37,31 @@ ul.nav-dropdown {
     }
   }
 }
+ul.nav-dropdown-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  ul.nav-dropdown {
+    display: none;
+  }
+  ul.nav-dropdown-mobile {
+    background-color: #fff;
+    display: none;
+    &.opened {
+      display: block;
+    }
+    .child-link {
+      padding: 18px 36px;
+      white-space: nowrap;
+      font-size: 14px;
+      font-weight: 500;
+      a {
+        color: $clr-primary-text;
+        text-transform: uppercase;
+      }
+    }
+    &.opened {
+      display: block;
+    }
+  }
+}

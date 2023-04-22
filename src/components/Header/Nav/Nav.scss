@@ -9,7 +9,7 @@ nav {
     justify-content: space-between;
     max-width: 1150px;
     margin: 0 auto;
-    > .head-link {
+    .head-link {
       color: #fff;
       padding: 15px;
       font-weight: 700;
@@ -21,6 +21,7 @@ nav {
       gap: 10px;
       cursor: pointer;
       position: relative;
+      white-space: nowrap;
       > a {
         color: #fff;
       }
@@ -36,6 +37,47 @@ nav {
         ul.nav-dropdown {
           display: block;
         }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 100%;
+    &.mobile-clicked {
+      display: block;
+    }
+    ul.links {
+      flex-direction: column;
+      .head-link {
+        justify-content: space-between;
+        .arrowIcon-mobile {
+          transform: rotate(-90deg);
+          height: 15px;
+          width: 15px;
+          &.clicked {
+            transform: rotate(0);
+          }
+        }
+        &:hover {
+          background-color: $clr-primary;
+          ul.nav-dropdown {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  nav {
+    ul.links {
+      .head-link {
+        font-size: 0.85rem;
       }
     }
   }

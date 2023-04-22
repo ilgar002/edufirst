@@ -1,0 +1,52 @@
+@import "../../../scss/variables.scss";
+.hamburger-box {
+  display: none;
+  width: 30px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: $clr-primary;
+  border-radius: 20%;
+  .hamburger-btn {
+    display: flex;
+    height: 17px;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    height: 17px;
+    justify-content: space-between;
+    position: relative;
+    .line {
+      height: 3px;
+      width: 20px;
+      background-color: white;
+      border-radius: 5px;
+      transition: 0.3s all ease;
+    }
+    &.opened {
+      transform: translateX(-8.5px);
+      .line {
+        &:nth-child(1) {
+          position: absolute;
+          top: 0;
+          left: 0;
+          transform: rotate(45deg) translate(20%, 200%);
+        }
+        &:nth-child(2) {
+          display: none;
+        }
+        &:nth-child(3) {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          transform: rotate(-45deg) translate(20%, -200%);
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .hamburger-box {
+    display: flex;
+  }
+}

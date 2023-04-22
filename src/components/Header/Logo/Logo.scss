@@ -1,0 +1,14 @@
+.logo {
+  width: 95px;
+  height: 60px;
+  padding-left: 16px;
+}
+@media (max-width: 768px) {
+  .logo {
+    height: 44px;
+    width: 70px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
