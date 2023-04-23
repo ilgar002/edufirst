@@ -4,7 +4,7 @@ import LogoImg from "../../images/edufirst-logo.png";
 import "./Logo.scss";
 const Logo = () => {
   return (
-    <Link to="/">
+    <Link to="/" className="logo-container">
       <img src={LogoImg} className="logo" alt="logo"></img>
     </Link>
   );
