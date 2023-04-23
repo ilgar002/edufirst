@@ -1,0 +1,42 @@
+@import "../../scss/variables.scss";
+.questions-section {
+  padding: 26px 0 48px 0;
+
+  .direction {
+    margin-bottom: 40px;
+  }
+
+  .title {
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    color: $clr-primary-text;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+
+  .questions {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .questions-section {
+    .questions {
+      width: 95%;
+      .question-item {
+        .question {
+          align-items: flex-start;
+        }
+        .answer {
+          padding: 20px 12px 12px 12px;
+        }
+      }
+    }
+  }
+}

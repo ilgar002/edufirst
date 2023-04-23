@@ -1,0 +1,39 @@
+@import "../../../scss/variables.scss";
+
+.question-item {
+  background: #f1f1f1;
+  border-radius: 8px;
+  .question {
+    padding: 14px 64px 14px 24px;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: $clr-primary-text;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    .plus-icon {
+      color: $clr-primary-text;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      font-size: 1.8rem;
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      transform: translate(0%, -50%);
+      &.opened {
+        transform: translate(0%, -50%) rotate(45deg);
+      }
+    }
+  }
+
+  .answer {
+    padding: 14px 48px 14px 48px;
+    font-weight: 400;
+    font-size: 0.95rem;
+    line-height: 1.25rem;
+    color: $clr-primary-text;
+  }
+}
