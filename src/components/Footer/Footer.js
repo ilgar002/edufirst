@@ -62,8 +62,8 @@ const Footer = () => {
               <li>
                 <img src={Call} alt="call" />
                 <div>
-                  <a href="/">050 605 59 98</a>
-                  <a href="/">055 529 61 76</a>
+                  <a href="tel:050-605-5998">050 605 59 98</a>
+                  <a href="tel:055-529-6176">055 529 61 76</a>
                 </div>
               </li>
             </ul>

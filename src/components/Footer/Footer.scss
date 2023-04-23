@@ -13,6 +13,16 @@ footer {
         display: flex;
         flex-direction: column;
         gap: 30px;
+        .logo-container {
+          flex-direction: column;
+          gap: 2px;
+          .logo {
+            height: 50px;
+          }
+          .logo-title {
+            color: #fff;
+          }
+        }
         .title {
           font-weight: 600;
           font-size: 1.4em;
@@ -91,6 +101,9 @@ footer {
         .box {
           width: 48%;
           gap: 20px;
+          .logo-container {
+            align-self: flex-start;
+          }
         }
       }
     }
@@ -142,6 +155,9 @@ footer {
                 gap: 10px;
               }
             }
+          }
+          .logo-container {
+            align-self: center;
           }
         }
       }

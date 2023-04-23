@@ -5,12 +5,22 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 3px 16px;
     .slogan {
-      font-size: 2rem;
+      font-size: 2.2rem;
       color: $clr-primary;
       font-family: "Alex Brush", cursive;
       font-weight: 600;
       letter-spacing: 3px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  header {
+    .caption {
+      .slogan {
+        font-size: 2rem;
+      }
     }
   }
 }
@@ -23,7 +33,6 @@ header {
     align-items: center;
     .caption {
       order: 1;
-      position: static;
       .slogan {
         display: none;
       }

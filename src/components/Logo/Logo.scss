@@ -1,13 +1,26 @@
-.logo {
-  width: 100px;
-  height: 60px;
-  object-fit: cover;
+@import "../../scss/variables.scss";
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  .logo {
+    height: 60px;
+    object-fit: cover;
+  }
+  .logo-title {
+    color: $clr-primary-text;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+  }
 }
+
 @media (max-width: 768px) {
   header {
+    position: relative;
     a.logo-container {
       height: 44px;
-      width: 80px;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
@@ -15,6 +28,18 @@
         height: 100%;
         width: 100%;
       }
+    }
+  }
+  .logo-container {
+    .logo-title {
+      font-size: 1.4rem;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .logo-container {
+    .logo-title {
+      font-size: 1.3rem;
     }
   }
 }
