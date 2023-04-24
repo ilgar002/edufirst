@@ -4,12 +4,12 @@
   align-items: center;
   gap: 6px;
   .logo {
-    height: 60px;
+    height: 48px;
     object-fit: cover;
   }
   .logo-title {
     color: $clr-primary-text;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     letter-spacing: 1px;
     font-family: "Rubik", sans-serif;
     font-weight: 500;
@@ -24,10 +24,10 @@
       left: 50%;
       transform: translateX(-50%);
       .logo {
-        height: 44px;
+        height: 42px;
       }
       .logo-title {
-        font-size: 1.4rem;
+        font-size: 1.35rem;
       }
     }
   }
