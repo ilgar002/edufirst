@@ -51,7 +51,14 @@ const Footer = () => {
               <li>
                 <img src={Location} alt="location" />
                 <div>
-                  <Link to={"/"}>1. Bakı şəhəri, M.Qaşqay küçəsi 112</Link>
+                  <Link
+                    to={
+                      "https://www.google.com/maps/place/Red+Academy/@40.4045876,49.8382521,17z/data=!3m1!4b1!4m6!3m5!1s0x40307d90bad07153:0xc3b054619c8e9cb3!8m2!3d40.4045876!4d49.8382521!16s%2Fg%2F11rvfyw1yw"
+                    }
+                    target="_blank"
+                  >
+                    1. Bakı şəhəri, M.Qaşqay küçəsi 112
+                  </Link>
                   <Link to={"/"}>2. Xırdalan şəhəri, Access Bankın arxası</Link>
                 </div>
               </li>

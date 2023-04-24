@@ -4,13 +4,11 @@ import { Link } from "react-router-dom";
 import Dropdown from "./Dropdown/Dropdown";
 import "./Nav.scss";
 import { navigations } from "./data";
-const Nav = ({ isOpened }) => {
+const Nav = ({ isOpened, setIsOpened }) => {
   const [currentDropdown, setCurrentDropdown] = useState(null);
   const onClickHandler = (index) => {
     setCurrentDropdown(index);
-    if (index === currentDropdown) {
-      setCurrentDropdown(null);
-    }
+    index === currentDropdown && setCurrentDropdown(null);
   };
   return (
     <nav className={isOpened ? "mobile-clicked" : ""}>
@@ -19,7 +17,12 @@ const Nav = ({ isOpened }) => {
           return (
             <div key={el.id}>
               <li onClick={() => onClickHandler(index)} className="head-link">
-                <Link to={el.head.slug}>{el.head.text}</Link>
+                <Link
+                  onClick={() => !el.child && setIsOpened(false)}
+                  to={el.head.slug}
+                >
+                  {el.head.text}
+                </Link>
                 {el.child && (
                   <BsCaretDownFill
                     className={
@@ -34,6 +37,7 @@ const Nav = ({ isOpened }) => {
               <Dropdown
                 className="-mobile"
                 data={el?.child}
+                setIsOpened={setIsOpened}
                 status={currentDropdown === index}
               />
             </div>

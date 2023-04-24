@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   AiOutlineYoutube,
   AiOutlineInstagram,
@@ -10,18 +11,21 @@ import "./Socials.scss";
 const Socials = () => {
   return (
     <div className="social-icons">
-      <a href="https://instagram.com/edufirst.az?igshid=YmMyMTA2M2Y=">
+      <Link
+        target="_blank"
+        to={"https://instagram.com/edufirst.az?igshid=YmMyMTA2M2Y="}
+      >
         <AiOutlineInstagram />
-      </a>
-      <a href="/">
+      </Link>
+      <Link target="_blank" to={""}>
         <FiFacebook />
-      </a>
-      <a href="/">
+      </Link>
+      <Link target="_blank" to={""}>
         <AiOutlineYoutube />
-      </a>
-      <a href="/">
+      </Link>
+      <Link target="_blank" to={""}>
         <AiOutlineTwitter />
-      </a>
+      </Link>
     </div>
   );
 };

@@ -6,11 +6,8 @@ const Hamburger = ({ isOpened, setIsOpened }) => {
     setIsOpened((prev) => !prev);
   };
   return (
-    <div className="hamburger-box">
-      <div
-        onClick={onClickHamburger}
-        className={!isOpened ? "hamburger-btn" : "hamburger-btn opened"}
-      >
+    <div onClick={onClickHamburger} className="hamburger-box">
+      <div className={!isOpened ? "hamburger-btn" : "hamburger-btn opened"}>
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>

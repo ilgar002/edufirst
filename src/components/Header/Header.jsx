@@ -14,7 +14,7 @@ const Header = () => {
         <span className="slogan shine">Təhsil hər zaman öndədir!</span>
       </div>
       <Hamburger isOpened={isOpened} setIsOpened={setIsOpened} />
-      <Nav isOpened={isOpened} />
+      <Nav setIsOpened={setIsOpened} isOpened={isOpened} />
     </header>
   );
 };
