@@ -94,7 +94,7 @@ export const navigations = [
 
     head: {
       text: "contact us",
-      slug: "about",
+      slug: "contact-us",
     },
   },
   {

@@ -9,7 +9,9 @@ li {
 a {
   text-decoration: none;
 }
-body {
+body,
+button,
+textarea {
   font-family: Open Sans, Arial, Helvetica Neue, Helvetica, sans-serif;
 }
 ::-webkit-scrollbar {
