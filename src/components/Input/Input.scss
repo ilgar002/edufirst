@@ -30,8 +30,19 @@
     text-align: end;
   }
   &.invalid {
-    input {
+    input,
+    textarea {
       border-color: $clr-error;
     }
+  }
+}
+@media (max-width: 768px) {
+  .input-group {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 576px) {
+  .input-group {
+    font-size: 0.8rem;
   }
 }

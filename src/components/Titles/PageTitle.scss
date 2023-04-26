@@ -1,0 +1,30 @@
+@import "../../scss/variables.scss";
+.page-title {
+  color: $clr-primary-text;
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  margin: 32px 0;
+  white-space: nowrap;
+}
+@media (max-width: 992px) {
+  .page-title {
+    margin: 24px 0;
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 768px) {
+  .page-title {
+    margin: 16px 0;
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 576px) {
+  .page-title {
+    margin: 12px 0;
+    font-size: 1.4rem;
+
+  }
+}

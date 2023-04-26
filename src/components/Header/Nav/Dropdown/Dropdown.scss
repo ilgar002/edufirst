@@ -10,13 +10,17 @@ ul.nav-dropdown {
   display: none;
   z-index: 100;
   .child-link {
-    padding: 9px 16px;
-    white-space: nowrap;
-    font-size: 14px;
     position: relative;
-    transition: none;
-    a {
+    > a {
+      padding: 9px 16px;
+      white-space: nowrap;
+      font-size: 0.9em;
       color: $clr-primary-text;
+      transition: none;
+      display: flex;
+      width: 100%;
+      text-transform: uppercase;
+      font-weight: 600;
     }
     &::after {
       content: "";
@@ -43,7 +47,7 @@ ul.nav-dropdown-mobile {
 }
 @media (max-width: 768px) {
   ul.nav-dropdown {
-    display: none;
+    display: none !important;
   }
   ul.nav-dropdown-mobile {
     background-color: #fff;
@@ -52,11 +56,13 @@ ul.nav-dropdown-mobile {
       display: block;
     }
     .child-link {
-      padding: 18px 36px;
-      white-space: nowrap;
-      font-size: 14px;
-      font-weight: 500;
       a {
+        padding: 18px 36px;
+        white-space: nowrap;
+        font-size: 14px;
+        font-weight: 500;
+        display: flex;
+        width: 100%;
         color: $clr-primary-text;
         text-transform: uppercase;
       }

@@ -1,11 +1,12 @@
 import React from "react";
+import PageTitle from "../../components/Titles/PageTitle";
 import "./Mission.scss";
 import MissionImg from "../../images/mission.svg";
 const Mission = () => {
   return (
     <div className="mission">
       <div className="container">
-        <h5 className="title">Our Mission</h5>
+        <PageTitle title="Our Mission" />
         <div className="content">
           <div className="text">
             <p>

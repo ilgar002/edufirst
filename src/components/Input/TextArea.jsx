@@ -11,7 +11,11 @@ const Input = ({
   hasError,
 }) => {
   return (
-    <div className={hasError ? "input-group invalid" : "input-group"}>
+    <div
+      className={
+        hasError ? "input-group text-area invalid" : "input-group text-area"
+      }
+    >
       <label htmlFor={name}>{description}</label>
       <textarea
         value={value}

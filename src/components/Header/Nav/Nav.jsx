@@ -22,16 +22,16 @@ const Nav = ({ isOpened, setIsOpened }) => {
                   to={el.head.slug}
                 >
                   {el.head.text}
+                  {el.child && (
+                    <BsCaretDownFill
+                      className={
+                        currentDropdown === index
+                          ? "arrowIcon clicked"
+                          : "arrowIcon"
+                      }
+                    />
+                  )}
                 </Link>
-                {el.child && (
-                  <BsCaretDownFill
-                    className={
-                      currentDropdown === index
-                        ? "arrowIcon-mobile clicked"
-                        : "arrowIcon-mobile"
-                    }
-                  />
-                )}
                 <Dropdown data={el?.child} />
               </li>
               <Dropdown

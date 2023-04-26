@@ -1,6 +1,41 @@
 @import "../../scss/variables.scss";
 .contact-page {
-  height: 500px;
   display: flex;
-  padding: 50px 150px;
+  flex-direction: column;
+  .content {
+    display: flex;
+    margin-bottom: 40px;
+    gap: 70px;
+    .img-container {
+      flex: 2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-left: 32px;
+
+      img {
+        width: 250px;
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .contact-page {
+    .content {
+      .img-container {
+        img {
+          width: 210px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .contact-page {
+    .content {
+      .img-container {
+        display: none;
+      }
+    }
+  }
 }

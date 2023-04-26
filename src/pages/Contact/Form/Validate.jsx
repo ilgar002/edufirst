@@ -15,6 +15,14 @@ export const validateEmail = (value) => {
     return "Invalid email";
   }
 };
+export const validateNumber = (value) => {
+  value = value.trim();
+  if (!value) {
+    return "Required";
+  } else if (value.length < 9) {
+    return "Invalid number";
+  }
+};
 export const validateSubject = (value) => {
   value = value.trim();
   if (!value) {

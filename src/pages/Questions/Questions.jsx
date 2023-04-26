@@ -1,6 +1,7 @@
 import React from "react";
 import "./Questions.scss";
 // import Direction from '../../components/Direction/Direction';
+import PageTitle from "../../components/Titles/PageTitle";
 import Question from "./Question/Question";
 
 const Questions = () => {
@@ -12,7 +13,7 @@ const Questions = () => {
         {/* <Direction
                     categorie={{ name: 'Tez-tez verilən suallar', slug: '/questions' }}
                 /> */}
-        <div className="title">Tez-tez verilən suallar</div>
+        <PageTitle title="Tez-tez verilən suallar" />
         <div className="questions">
           <Question
             question={

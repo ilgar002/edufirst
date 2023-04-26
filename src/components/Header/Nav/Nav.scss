@@ -1,6 +1,7 @@
 @import "../../../scss/variables.scss";
 nav {
   background-color: $clr-primary;
+  font-size: 1rem;
   * {
     transition: 0.3s all ease;
   }
@@ -10,29 +11,30 @@ nav {
     max-width: 1150px;
     margin: 0 auto;
     .head-link {
-      color: #fff;
-      padding: 15px;
-      font-weight: 700;
-      font-size: 1rem;
-      text-transform: uppercase;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      cursor: pointer;
       position: relative;
-      white-space: nowrap;
       > a {
         color: #fff;
-      }
-      .arrowIcon {
-        height: 12px;
-        width: 12px;
+        padding: 15px;
+        font-weight: 700;
+        font-size: 1em;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        cursor: pointer;
+        white-space: nowrap;
+        .arrowIcon {
+          height: 14px;
+          width: 14px;
+        }
       }
       &:hover {
         background-color: $clr-primary-dark;
-        .arrowIcon {
-          transform: rotate(180deg);
+        > a {
+          .arrowIcon {
+            transform: rotate(180deg);
+          }
         }
         ul.nav-dropdown {
           display: block;
@@ -49,6 +51,7 @@ nav {
     left: 0;
     width: 100%;
     z-index: 100;
+    font-size: 0.9rem;
     &.mobile-clicked {
       display: block;
     }
@@ -56,18 +59,22 @@ nav {
       flex-direction: column;
       .head-link {
         justify-content: space-between;
-        .arrowIcon-mobile {
-          transform: rotate(-90deg);
-          height: 15px;
-          width: 15px;
-          &.clicked {
-            transform: rotate(0);
+        > a {
+          justify-content: space-between;
+          .arrowIcon {
+            transform: rotate(-90deg);
+            height: 15px;
+            width: 15px;
+            &.clicked {
+              transform: rotate(0) !important;
+            }
           }
         }
         &:hover {
-          background-color: $clr-primary;
-          ul.nav-dropdown {
-            display: none;
+          > a {
+            .arrowIcon {
+              transform: rotate(-90deg);
+            }
           }
         }
       }

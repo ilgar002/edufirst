@@ -2,20 +2,28 @@ import React from "react";
 import { Formik } from "formik";
 import Input from "../../../components/Input/Input";
 import TextArea from "../../../components/Input/TextArea";
-
+import "./Form.scss";
 import {
   validateFirstname,
   validateEmail,
   validateSubject,
   validateMessage,
+  validateNumber,
 } from "./Validate";
 const Form = () => (
   <Formik
-    initialValues={{ firstname: "", email: "", subject: "", message: "" }}
+    initialValues={{
+      firstname: "",
+      email: "",
+      number: "",
+      subject: "",
+      message: "",
+    }}
     validate={(values) => {
       const errors = {};
       errors.firstname = validateFirstname(values.firstname);
       errors.email = validateEmail(values.email);
+      errors.number = validateNumber(values.number);
       errors.subject = validateSubject(values.subject);
       errors.message = validateMessage(values.message);
       return errors;
@@ -33,6 +41,7 @@ const Form = () => (
       <form
         onSubmit={(e) => {
           e.preventDefault();
+          handleSubmit();
         }}
       >
         <Input
@@ -58,6 +67,17 @@ const Form = () => (
           onChange={handleChange}
           onBlur={handleBlur}
           hasError={Boolean(errors.email && touched.email && errors.email)}
+        />
+        <Input
+          name="number"
+          description="Enter number"
+          type="text"
+          placeholder=""
+          alertMsg={errors.number && touched.number && errors.number}
+          value={values.number}
+          onChange={handleChange}
+          onBlur={handleBlur}
+          hasError={Boolean(errors.number && touched.number && errors.number)}
         />
         <Input
           name="subject"

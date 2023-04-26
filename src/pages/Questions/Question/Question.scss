@@ -3,10 +3,12 @@
 .question-item {
   background: #f1f1f1;
   border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
   .question {
     padding: 14px 64px 14px 24px;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1em;
     line-height: 1.25rem;
     color: $clr-primary-text;
     display: flex;
@@ -17,7 +19,6 @@
     .plus-icon {
       color: $clr-primary-text;
       transition: all 0.2s ease;
-      cursor: pointer;
       font-size: 1.8rem;
       position: absolute;
       right: 15px;
@@ -30,10 +31,21 @@
   }
 
   .answer {
-    padding: 14px 48px 14px 48px;
+    padding: 0 36px 14px 36px;
     font-weight: 400;
-    font-size: 0.95rem;
+    font-size: 0.95em;
     line-height: 1.25rem;
     color: $clr-primary-text;
+  }
+}
+@media (max-width: 576px) {
+  .question-item {
+    font-size: 0.9rem;
+    .question {
+      padding: 12px 48px 12px 16px;
+      .plus-icon {
+        font-size: 1.5rem;
+      }
+    }
   }
 }
