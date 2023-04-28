@@ -7,6 +7,8 @@ import Home from "./pages/Home/Home";
 import Mission from "./pages/Mission/Mission";
 import Questions from "./pages/Questions/Questions";
 import Contact from "./pages/Contact/Contact";
+import { ToastContainer } from "react-toastify";
+
 const App = () => {
   return (
     <>
@@ -18,6 +20,7 @@ const App = () => {
           <Route path="/mission" element={<Mission />} />
           <Route path="/contact-us" element={<Contact />} />
         </Routes>
+        <ToastContainer />
         <Footer />
       </BrowserRouter>
     </>

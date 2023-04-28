@@ -1,41 +1,47 @@
 export const validateFirstname = (value) => {
   value = value.trim();
   if (!value) {
-    return "Required";
+    return { message: "Required", status: false };
   } else if (value.length < 3) {
-    return "Invalid firstname";
+    return { message: "Invalid firstname", status: false };
+  } else {
+    return { message: "", status: true };
   }
 };
 export const validateEmail = (value) => {
   value = value.trim();
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!value) {
-    return "Required";
+    return { message: "Required", status: false };
   } else if (!emailRegex.test(value)) {
-    return "Invalid email";
+    return { message: "Invalid email", status: false };
   }
+  return { message: "", status: true };
 };
 export const validateNumber = (value) => {
   value = value.trim();
   if (!value) {
-    return "Required";
+    return { message: "Required", status: false };
   } else if (value.length < 9) {
-    return "Invalid number";
+    return { message: "Invalid number", status: false };
   }
+  return { message: "", status: true };
 };
 export const validateSubject = (value) => {
   value = value.trim();
   if (!value) {
-    return "Required";
+    return { message: "Required", status: false };
   } else if (value.length < 3) {
-    return "Invalid subject";
+    return { message: "Invalid subject", status: false };
   }
+  return { message: "", status: true };
 };
 export const validateMessage = (value) => {
   value = value.trim();
   if (!value) {
-    return "Required";
+    return { message: "Required", status: false };
   } else if (value.length < 3) {
-    return "Invalid message";
+    return { message: "Invalid message", status: false };
   }
+  return { message: "", status: true };
 };

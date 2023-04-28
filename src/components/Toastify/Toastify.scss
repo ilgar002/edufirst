@@ -1,0 +1,15 @@
+@import "../../scss/variables.scss";
+.toast-message {
+  color: #fff;
+  background: $clr-primary;
+  .Toastify__toast-icon {
+    display: none;
+  }
+  .Toastify__progress-bar--info {
+    background-color: #fff;
+  }
+  .Toastify__close-button--light {
+    color: #fff;
+    opacity: 1;
+  }
+}

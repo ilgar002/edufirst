@@ -3,6 +3,10 @@ import { Formik } from "formik";
 import Input from "../../../components/Input/Input";
 import TextArea from "../../../components/Input/TextArea";
 import "./Form.scss";
+import { notify } from "../../../components/Toastify/Toastify";
+
+import { sendMessage } from "../../../tools/telegram/Telegram";
+
 import {
   validateFirstname,
   validateEmail,
@@ -21,11 +25,11 @@ const Form = () => (
     }}
     validate={(values) => {
       const errors = {};
-      errors.firstname = validateFirstname(values.firstname);
-      errors.email = validateEmail(values.email);
-      errors.number = validateNumber(values.number);
-      errors.subject = validateSubject(values.subject);
-      errors.message = validateMessage(values.message);
+      errors.firstname = validateFirstname(values.firstname).message;
+      errors.email = validateEmail(values.email).message;
+      errors.number = validateNumber(values.number).message;
+      errors.subject = validateSubject(values.subject).message;
+      errors.message = validateMessage(values.message).message;
       return errors;
     }}
   >
@@ -42,6 +46,17 @@ const Form = () => (
         onSubmit={(e) => {
           e.preventDefault();
           handleSubmit();
+          if (
+            validateFirstname(values.firstname).status &&
+            validateEmail(values.email).status &&
+            validateNumber(values.number).status &&
+            validateSubject(values.subject).status &&
+            validateMessage(values.message).status
+          ) {
+            const msg = `Firstname: ${values.firstname}\nEmail: ${values.email}\nNumber: ${values.number}\nSubject: ${values.subject}\nMessage: ${values.message},`;
+            sendMessage(msg);
+            notify("Message sended!");
+          }
         }}
       >
         <Input
