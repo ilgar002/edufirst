@@ -4,7 +4,7 @@ import Input from "../../../components/Input/Input";
 import InputPhone from "../../../components/Input/InputPhone";
 import TextArea from "../../../components/Input/TextArea";
 import { notify } from "../../../components/Toastify/Toastify";
-import { sendMessage } from "../../../tools/telegram/Telegram";
+import { sendMessage } from "../../../telegram/Telegram";
 import {
   validateFirstname,
   validateEmail,
