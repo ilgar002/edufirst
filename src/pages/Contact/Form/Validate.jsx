@@ -19,10 +19,9 @@ export const validateEmail = (value) => {
   return { message: "", status: true };
 };
 export const validateNumber = (value) => {
-  value = value.trim();
   if (!value) {
     return { message: "Required", status: false };
-  } else if (value.length < 9) {
+  } else if (value.length != 13 && value.length != 14) {
     return { message: "Invalid number", status: false };
   }
   return { message: "", status: true };

@@ -2,14 +2,26 @@
 .toast-message {
   color: #fff;
   background: $clr-primary;
+  &.Toastify__toast--error {
+    .Toastify__close-button--light {
+      color: $clr-error;
+    }
+    .Toastify__progress-bar--error {
+      background-color: $clr-error;
+    }
+  }
+  &.Toastify__toast--success {
+    .Toastify__close-button--light {
+      color: #fff;
+    }
+    .Toastify__progress-bar--error {
+      background-color: $clr-success;
+    }
+  }
   .Toastify__toast-icon {
     display: none;
   }
-  .Toastify__progress-bar--info {
-    background-color: #fff;
-  }
   .Toastify__close-button--light {
-    color: #fff;
     opacity: 1;
   }
 }

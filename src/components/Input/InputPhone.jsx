@@ -1,6 +1,8 @@
 import React from "react";
+import "react-phone-number-input/style.css";
+import PhoneInput from "react-phone-number-input";
 import "./Input.scss";
-const Input = ({
+const InputPhone = ({
   name,
   description,
   placeholder,
@@ -12,13 +14,9 @@ const Input = ({
   onFocus,
 }) => {
   return (
-    <div
-      className={
-        hasError ? "input-group text-area invalid" : "input-group text-area"
-      }
-    >
+    <div className={hasError ? "input-group phone-input invalid" : "input-group phone-input"}>
       <label htmlFor={name}>{description}</label>
-      <textarea
+      <PhoneInput
         value={value}
         onChange={onChange}
         onFocus={onFocus}
@@ -26,13 +24,11 @@ const Input = ({
         name={name}
         id={name}
         placeholder={placeholder}
-        cols="30"
-        rows="5"
-        maxLength="1000"
-      ></textarea>
+        defaultCountry="AZ"
+      />
       <small className="alert">{alertMsg}</small>
     </div>
   );
 };
 
-export default Input;
+export default InputPhone;

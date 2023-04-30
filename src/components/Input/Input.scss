@@ -25,6 +25,7 @@
     min-width: 250px;
   }
   .alert {
+    display: none;
     color: $clr-error;
     padding-right: 2px;
     text-align: end;
@@ -33,6 +34,14 @@
     input,
     textarea {
       border-color: $clr-error;
+    }
+    .alert {
+      display: block;
+    }
+  }
+  &.phone-input {
+    input {
+      border-color: #f2f2f2;
     }
   }
 }

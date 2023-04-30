@@ -7,6 +7,7 @@ const Input = ({
   placeholder,
   alertMsg,
   value,
+  onFocus,
   onBlur,
   onChange,
   hasError,
@@ -18,6 +19,7 @@ const Input = ({
         value={value}
         onChange={onChange}
         onBlur={onBlur}
+        onFocus={onFocus}
         type={type}
         name={name}
         id={name}
@@ -29,15 +31,4 @@ const Input = ({
 };
 
 export default Input;
-{
-  /* <Input
-  name="firstname"
-  description="Enter firstname"
-  type="text"
-  placeholder=""
-  alertMsg={"invalid firstname"}
-  value={firstname}
-  onChange={onChange}
-  onBlur={onBlur}
-/>; */
-}
+

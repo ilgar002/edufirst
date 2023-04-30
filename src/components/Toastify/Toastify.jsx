@@ -12,4 +12,4 @@ const properties = {
   theme: "light",
 };
 
-export const notify = (message) => toast.info(message, properties);
+export const notify = (message, status) => toast[status](message, properties);
