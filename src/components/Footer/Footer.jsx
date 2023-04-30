@@ -38,7 +38,7 @@ const Footer = () => {
                 <Link to={"/questions"}>Tez-tez soruşulan suallar</Link>
               </li>
               <li>
-                <Link to={"/questions"}>Tez-tez soruşulan suallar</Link>
+                <Link to={"/contact-us"}>Bizə mesaj göndərin</Link>
               </li>
               <li>
                 <Link to={"/questions"}>Tez-tez soruşulan suallar</Link>

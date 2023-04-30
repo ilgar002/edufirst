@@ -4,14 +4,14 @@ import Input from "../../../components/Input/Input";
 import InputPhone from "../../../components/Input/InputPhone";
 import TextArea from "../../../components/Input/TextArea";
 import { notify } from "../../../components/Toastify/Toastify";
-import { sendMessage } from "../../../telegram/Telegram";
+import { sendMessage } from "../../../tools/telegram/Telegram";
 import {
   validateFirstname,
   validateEmail,
   validateSubject,
   validateMessage,
   validateNumber,
-} from "./Validate";
+} from "../../../tools/validation/Validate";
 import "./Form.scss";
 
 const Form = () => {
@@ -158,11 +158,4 @@ const Form = () => {
 };
 
 export default Form;
-//   const {
-//     value: email,
-//     isValid: emailIsValid,
-//     hasError: emailHasError,
-//     onValueChange: onEmailChange,
-//     onValueFocus: onEmailFocus,
-//     onValueBlur: onEmailBlur,
-//   } = useForm(validateEmail);
+

@@ -20,7 +20,7 @@ export const navigations = [
       {
         id: uuidv4(),
         text: "what is the singapore math?",
-        slug: "about",
+        slug: "singapore-math",
       },
     ],
   },
@@ -102,7 +102,7 @@ export const navigations = [
 
     head: {
       text: "blog",
-      slug: "about",
+      slug: "blog",
     },
   },
 ];

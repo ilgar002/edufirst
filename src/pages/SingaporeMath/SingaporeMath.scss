@@ -1,0 +1,34 @@
+@import "../../scss/variables.scss";
+.singapore-math-page {
+  color: $clr-primary-text;
+  font-size: 1rem;
+  .section {
+    margin-bottom: 3em;
+    .title {
+      font-size: 1.8em;
+      opacity: 0.9;
+      font-weight: 600;
+      letter-spacing: 1px;
+    //   white-space: nowrap;
+      margin-bottom: 1.5em;
+    }
+    .content {
+      display: flex;
+      gap: 1.5em;
+      .text-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.3em;
+        p.text {
+          font-size: 1.1em;
+          letter-spacing: 0.8px;
+          text-align: justify;
+          line-height: 1.5em;
+          .highlighted {
+            color: $clr-primary;
+          }
+        }
+      }
+    }
+  }
+}
