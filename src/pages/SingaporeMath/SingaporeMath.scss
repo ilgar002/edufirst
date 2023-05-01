@@ -9,7 +9,7 @@
       opacity: 0.9;
       font-weight: 600;
       letter-spacing: 1px;
-    //   white-space: nowrap;
+      //   white-space: nowrap;
       margin-bottom: 1.5em;
     }
     .content {
@@ -27,6 +27,42 @@
           .highlighted {
             color: $clr-primary;
           }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .singapore-math-page {
+    font-size: 0.9rem;
+    .section {
+      .title {
+        margin-bottom: 1em;
+      }
+      .content {
+        .text-container {
+          p.text {
+            .highlighted {
+            }
+          }
+        }
+        .img-container {
+          display: none;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .singapore-math-page {
+    font-size: 0.8rem;
+    .section {
+      .title {
+        margin-bottom: 0.9em;
+      }
+      .content {
+        .img-container {
+          display: none;
         }
       }
     }

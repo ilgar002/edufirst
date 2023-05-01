@@ -41,7 +41,7 @@ const Footer = () => {
                 <Link to={"/contact-us"}>Bizə mesaj göndərin</Link>
               </li>
               <li>
-                <Link to={"/questions"}>Tez-tez soruşulan suallar</Link>
+                <Link to={"/blog"}>Bloq</Link>
               </li>
             </ul>
           </div>
