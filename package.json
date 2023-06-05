@@ -16,12 +16,15 @@
     "axios": "^1.4.0",
     "formik": "^2.2.9",
     "react": "^18.2.0",
+    "react-awesome-slider": "^4.1.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.8.0",
     "react-phone-number-input": "^3.2.20",
     "react-router-dom": "^6.10.0",
+    "react-slick": "^0.29.0",
     "react-toastify": "^9.1.2",
     "sass": "^1.62.0",
+    "slick-carousel": "^1.8.1",
     "uuid": "^9.0.0"
   },
   "devDependencies": {

@@ -1,0 +1,40 @@
+@import "../../scss/variables.scss";
+
+.banner-slider {
+  margin-top: 20px;
+  .slick-slider {
+    .slider-item {
+      //   background-image: url("../../../../images/slider-background.png");
+      background-color: $clr-primary;
+      height: 550px;
+      .item-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+      }
+    }
+
+    .slick-dots {
+      bottom: 10px;
+      color: #fff;
+      li.slick-active {
+        button {
+          &::before {
+            opacity: 1;
+          }
+        }
+      }
+
+      li {
+        button {
+          &::before {
+            font-size: 9px;
+            opacity: 0.5;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
